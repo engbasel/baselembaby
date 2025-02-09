@@ -1,12 +1,14 @@
 # 🎨 Basel Embaby Portfolio
 
 ## 🌟 About Me
-Hi, I'm **Basel Embaby**, a passionate **Flutter Developer** and **CCE Department student at Mansoura University**. I specialize in mobile app development, with a focus on building user-friendly applications that solve real-world problems.
+Hi, I'm **Basel Ahmed Embaby**, a passionate **Flutter Developer** and **CCE Department student at Mansoura University**. I specialize in mobile app development, with a focus on building user-friendly applications that solve real-world problems.
 
 🔹 **Skills:** Flutter, Dart, Firebase, REST APIs, UI/UX Design  
 🔹 **Projects:** Mobile applications for CCE students, gym tracking app, medical reservation system  
 🔹 **Interests:** Mobile development, system design, AI integration in mobile apps  
 🔹 **Certifications:** Photoshop certified  
+🔹 **GPA:** 3.5 (**Very Good**)  
+🔹 **Languages:** B1 **English**, A2 **German**  
 
 ## 🚀 Repository Overview
 This repository hosts my **personal portfolio website**, built using HTML, CSS, and JavaScript. It showcases my work, skills, and contact information.
@@ -53,9 +55,12 @@ baselembaby/
    ```
 
 ## 📬 Contact Me
-📧 **Email:** basel.embaby@example.com  
-💼 **LinkedIn:** [linkedin.com/in/basel-embaby](https://linkedin.com/in/basel-embaby)  
-📱 **GitHub:** [github.com/engbasel](https://github.com/engbasel)  
+📛 **Name:** Basel Ahmed Embaby  
+📍 **Locations:** Cairo, Mansoura  
+📞 **Phone:** +20 1060417664  
+📧 **Email:** basel.a.embaby@gmail.com  
+🔗 **LinkedIn:** [linkedin.com/in/basel-embaby](https://linkedin.com/in/basel-embaby)  
+💻 **GitHub:** [github.com/engbasel](https://github.com/engbasel)  
 
 ## 📜 License
 This project is licensed under the **MIT License**. Feel free to fork, modify, and use it!
