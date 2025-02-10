@@ -180,12 +180,42 @@ section {
 .card {
     background-color: #3C3D37; /* Dark gray */
     width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    box-shadow: 0 5px 25px rgba(248, 248, 248, 0.15);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
     transition: 0.7s ease;
 }
+
+.card .info p {
+    color: #ECDFCC; /* Light text */
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+.card .info ul {
+    padding-left: 20px;
+}
+
+.card .info ul li {
+    color: #ECDFCC;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    position: relative;
+    list-style: none;
+}
+
+/* Custom bullet point (instead of default dots) */
+.card .info ul li::before {
+    content: "✔"; /* Custom checkmark */
+    color: #697565; /* Muted green */
+    font-weight: bold;
+    margin-right: 8px;
+}
+
 
 .card:hover {
     transform: scale(1.1);
