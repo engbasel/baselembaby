@@ -22,36 +22,47 @@
         </nav>
     </header>
 <!------------------ main Section End ------------------>
-    <section class="main">
-        <div>
-            <h2>Hello, I'm <br><span>Basel Embaby</span></h2>
-            <h3>Moblie App Developer</h3>
-            <a href="#projects" class="main-btn">View my work</a>
-            <!-- <div class="social-icons">
-                <a href="https://www.linkedin.com/in/basel-embaby-948671227/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/embaby_basel"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/basel.embaby.9/"><i class="fab fa-facebook"></i></a>
-                <a href="https://github.com/engbasel"><i class="fab fa-github"></i></a>
-            </div> -->
 
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/basel-embaby-948671227/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/embaby_basel" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/basel.embaby.9/" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://github.com/engbasel" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            
+<section class="main">
+    <div>
+        <h2>Hello, I'm <br><span>Basel Embaby</span></h2>
+        <h3>Mobile App Developer</h3>
+        
+        <a href="#projects" class="main-btn">View my work</a>          
+        <a href="javascript:void(0);" class="main-btn" onclick="downloadCV()">Download CV</a>
 
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/basel-embaby-948671227/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/embaby_basel" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/basel.embaby.9/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://github.com/engbasel" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+function downloadCV() {
+    const cvUrl = "images/basel-Embaby-CV.pdf"; // Update this path with the actual CV location
+    const fileName = "Basel_Embaby_CV.pdf";
+
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
+
 <!------------------ main Section  End ------------------>
 <!------------------ services Section  ------------------>
     <section class="cards" id="services">
