@@ -284,3 +284,70 @@
 .social-icons a:nth-child(2) { background: #333; } /* Twitter */
 .social-icons a:nth-child(3) { background: #333; } /* Facebook */
 .social-icons a:nth-child(4) { background: #333; } /* GitHub */
+
+/* Freelance section specific styles */
+.freelance-link {
+    display: inline-block;
+    color: #ECDFCC;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #697565, #3C3D37);
+    transition: all 0.3s ease;
+}
+
+.freelance-link:hover {
+    background: linear-gradient(135deg, #3C3D37, #697565);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.freelance-link i {
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+.freelance-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.freelance-stats span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    color: #ECDFCC;
+}
+
+.freelance-stats i {
+    color: #697565;
+}
+
+/* Specific icon colors for freelance platforms */
+#freelance .card:nth-child(1) .icon i {
+    color: #6FDA44; /* Upwork green */
+}
+
+#freelance .card:nth-child(2) .icon i {
+    color: #1DBF73; /* Fiverr green */
+}
+
+#freelance .card:nth-child(3) .icon i {
+    color: #F7B500; /* Mostaql yellow */
+}
+
+#freelance .card:nth-child(4) .icon i {
+    color: #E05D37; /* Khamsat orange */
+}
+
+/* Hover effect for freelance cards */
+#freelance .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+

@@ -73,3 +73,56 @@
 .social-icons a:nth-child(even) {
     animation: float 2s infinite ease-in-out 1s;
 }
+
+/* Freelance section animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Apply animations to freelance elements */
+#freelance .card .icon i {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.freelance-link {
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite linear;
+}
+
+/* Staggered entrance animation for freelance cards */
+#freelance .card:nth-child(1) {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#freelance .card:nth-child(2) {
+    animation: fadeIn 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
+}
+
+#freelance .card:nth-child(3) {
+    animation: fadeIn 0.5s ease-in-out 0.4s;
+    animation-fill-mode: both;
+}
+
+#freelance .card:nth-child(4) {
+    animation: fadeIn 0.5s ease-in-out 0.6s;
+    animation-fill-mode: both;
+}
+
