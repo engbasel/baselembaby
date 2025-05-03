@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<!------------------ head Section  ------------------>
 <head>
-<link rel="shortcut icon" href="images/B.png">
+    <link rel="shortcut icon" href="images/B.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Basel Embaby</title>
+    <script src="js/main.js" defer></script>
 </head>
-<!------------------ head Section End ------------------>
 <body>
-<!------------------ main Section  ------------------>
+    <!-- Header -->
     <header>
         <a href="#" class="logo">Basel Embaby</a>
         <nav class="navigation">
@@ -21,518 +20,65 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-<!------------------ main Section End ------------------>
 
-<section class="main">
-    <div>
-        <h2>Hello, I'm <br><span>Basel Embaby</span></h2>
-        <h3>Mobile App Developer</h3>
-        
-        <a href="#projects" class="main-btn">View my work</a>          
-        <a href="javascript:void(0);" class="main-btn" onclick="downloadCV()">Download CV</a>
-
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/basel-embaby-948671227/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/embaby_basel" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.facebook.com/basel.embaby.9/" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://github.com/engbasel" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-<script>
-function downloadCV() {
-    const cvUrl = "images/basel-Embaby-CV.pdf"; // Update this path with the actual CV location
-    const fileName = "Basel_Embaby_CV.pdf";
-
-    const link = document.createElement("a");
-    link.href = cvUrl;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-</script>
-
-
-<!------------------ main Section  End ------------------>
-<!------------------ services Section  ------------------>
-    <section class="cards" id="services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-
-
-            <!-- <div class="card">
-                <div class="icon">
-                    <i class="fa fa-user-secret"></i>
-                </div>
-                <div class="info">
-                    <h3>SOC Analyst</h3>
-                    <p>Security operation center Tier one special in monitoring traffic and hot dangerous and unsafe
-                        recognized traffic.</p>
-                </div>
-            </div> -->
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-mobile"></i>
-                </div>
-                <div class="info">
-                    <h3>Mobile App Developer Flutter</h3>
-                    <p>
-                        As a dedicated mobile developer specializing in Flutter:
-                    </p>
-                    
-                    <ul>
-                        <li>Strong foundation in mobile app development with web technologies.</li>
-                        <li>Self-learning experience, leading to expertise in Flutter.</li>
-                        <li>Successfully executed multiple projects.</li>
-                        <li>Special interest in e-commerce applications and POS solutions.</li>
-                        <li>Actively developing and marketing several products.</li>
-                    </ul>
-                </div>
-            </div>
-      
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="info">
-                    <h3>Web Developer</h3>
-                    <p>
-                        As a versatile web developer, I specialize in building modern, responsive web applications using both traditional web technologies and Flutter Web.
-                    </p>
-                    <ul>
-                        <li>Proficient in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</li>
-                        <li>Experience in building dynamic and responsive websites with optimized UI/UX.</li>
-                        <li>Developing cross-platform web apps using Flutter Web for seamless performance.</li>
-                        <li>Understanding of backend development, integrating APIs, and managing databases.</li>
-                        <li>Special focus on e-commerce platforms and POS solutions.</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Main Section -->
+    <section class="main">
+        <div>
+            <h2>Hello, I'm <br><span>Basel Embaby</span></h2>
+            <h3>Mobile App Developer</h3>
             
-            
+            <a href="#projects" class="main-btn">View my work</a>          
+            <a href="javascript:void(0);" class="main-btn" onclick="downloadCV()">Download CV</a>
 
-      
-    
-        </div>
-    </section>
-<!------------------ services Section End ------------------>
-    <!------------------------Flutter  Projects Section ------------------>
-    <section class="projects" id="projects">
-        <h2 class="title">Flutter Projects</h2>
-        <div class="content">
-
-
-
-<!-- Notes App -->
-<div class="project-card"
-    style="background-color: #333333; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 4 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin: 20px auto; max-width: 600px; transition: transform 0.2s ease-in-out;">
-    <div class="project-image" style="text-align: center; background-color: #3c3d37; padding: 15px;">
-        <video width="560" height="315" controls>
-            <source src="images/NotesApp.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="project-info" style="padding: 20px; background-color: #333333;">
-        <p class="project-category" style="font-size: 1.2em; color: #edf0e0; margin-bottom: 10px;">Notes App</p>
-        <p class="project-description" style="font-size: 1em; color: #edf0e0; margin-bottom: 15px;">A simple
-            app for taking notes with customizable colors for each note.</p>
-        <strong class="project-title">
-      
-            <a href="https://github.com/engbasel/Notes-App-SQflite" target="_blank"
-            style="font-size: 1.1em; color: #edf0e0; text-decoration: none; margin-right: 10px; 
-                   animation: moveAnimation 3s infinite linear;">
-            Source code
-        </a>
-        
-        <style>
-            @keyframes moveAnimation {
-                0% {
-                    transform: translateX(0);
-                }
-                50% {
-                    transform: translateX(20px);
-                }
-                100% {
-                    transform: translateX(0);
-                }
-            }
-        </style>
-        
-        <a href="#" target="_blank"
-        style="font-size: 1.1em; color: #edf0e0; text-decoration: none; margin-right: 10px; 
-               animation: moveAnimation 3s infinite linear;">
-        More details
-    </a>
-    
-    <style>
-        @keyframes moveAnimation {
-            0% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(20px);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-    </style>
-    
-        </strong>
-        <div class="project-details" style="margin-top: 20px;">
-            <p style="font-size: 1em; color: #edf0e0; margin-bottom: 10px;">Technologies and Features:</p>
-            <ul style="list-style-type: disc; padding-left: 20px; color: #edf0e0;">
-                <li style=" margin-bottom: 5px; ">Used SQflite for local database storage</li>
-                <li style="margin-bottom: 5px;">Implemented customizable note colors</li>
-                <li style="margin-bottom: 5px;">Included CRUD operations for notes management</li>
-                <li style="margin-bottom: 5px;">Provided search and sorting functionality</li>
-                <li style="margin-bottom: 5px;">Simple and intuitive user interface</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- Notes App End -->
-
-<!-- Notes App -->
-<div class="project-card"
-    style="background-color: #333333; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 4 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin: 20px auto; max-width: 600px; transition: transform 0.2s ease-in-out;">
-    <div class="project-image" style="text-align: center; background-color: #3c3d37; padding: 15px;">
-        <video width="560" height="315" controls>
-            <source src="images/NotesApp.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="project-info" style="padding: 20px; background-color: #333333;">
-        <p class="project-category" style="font-size: 1.2em; color: #edf0e0; margin-bottom: 10px;">Notes App</p>
-        <p class="project-description" style="font-size: 1em; color: #edf0e0; margin-bottom: 15px;">A simple
-            app for taking notes with customizable colors for each note.</p>
-        <strong class="project-title">
-      
-            <a href="https://github.com/engbasel/Notes-App-SQflite" target="_blank"
-            style="font-size: 1.1em; color: #edf0e0; text-decoration: none; margin-right: 10px; 
-                   animation: moveAnimation 3s infinite linear;">
-            Source code
-        </a>
-        
-        <style>
-            @keyframes moveAnimation {
-                0% {
-                    transform: translateX(0);
-                }
-                50% {
-                    transform: translateX(20px);
-                }
-                100% {
-                    transform: translateX(0);
-                }
-            }
-        </style>
-        
-        <a href="#" target="_blank"
-        style="font-size: 1.1em; color: #edf0e0; text-decoration: none; margin-right: 10px; 
-               animation: moveAnimation 3s infinite linear;">
-        More details
-    </a>
-    
-    <style>
-        @keyframes moveAnimation {
-            0% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(20px);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-    </style>
-    
-        </strong>
-        <div class="project-details" style="margin-top: 20px;">
-            <p style="font-size: 1em; color: #edf0e0; margin-bottom: 10px;">Technologies and Features:</p>
-            <ul style="list-style-type: disc; padding-left: 20px; color: #edf0e0;">
-                <li style=" margin-bottom: 5px; ">Used SQflite for local database storage</li>
-                <li style="margin-bottom: 5px;">Implemented customizable note colors</li>
-                <li style="margin-bottom: 5px;">Included CRUD operations for notes management</li>
-                <li style="margin-bottom: 5px;">Provided search and sorting functionality</li>
-                <li style="margin-bottom: 5px;">Simple and intuitive user interface</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- Notes App End --><!-- Notes App -->
-<div class="project-card"
-style="background-color: #333333; border: 1px solid #ffffff; border-radius: 8px; box-shadow: 4 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin: 20px auto; max-width: 600px; transition: transform 0.2s ease-in-out;">
-<div class="project-image" style="text-align: center; background-color: #3c3d37; padding: 15px;">
-    <video width="560" height="315" controls>
-        <source src="images/NotesApp.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-<div class="project-info" style="padding: 20px; background-color: #333333;">
-    <p class="project-category" style="font-size: 1.2em; color: #edf0e0; margin-bottom: 10px;">Notes App</p>
-    <p class="project-description" style="font-size: 1em; color: #edf0e0; margin-bottom: 15px;">A simple
-        app for taking notes with customizable colors for each note.</p>
-    <strong class="project-title">
-  
-        <a href="https://github.com/engbasel/Notes-App-SQflite" target="_blank"
-        style="font-size: 1.1em; color: #edf0e0; text-decoration: none; margin-right: 10px; 
-               animation: moveAnimation 3s infinite linear;">
-        Source code
-    </a>
-    
-    <style>
-        @keyframes moveAnimation {
-            0% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(20px);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-    </style>
-    
-    <a href="#" target="_blank"
-    style="font-size: 1.1em; color: #edf0e0; text-decoration: none; margin-right: 10px; 
-           animation: moveAnimation 3s infinite linear;">
-    More details
-</a>
-
-<style>
-    @keyframes moveAnimation {
-        0% {
-            transform: translateX(0);
-        }
-        50% {
-            transform: translateX(20px);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
-</style>
-
-    </strong>
-    <div class="project-details" style="margin-top: 20px;">
-        <p style="font-size: 1em; color: #edf0e0; margin-bottom: 10px;">Technologies and Features:</p>
-        <ul style="list-style-type: disc; padding-left: 20px; color: #edf0e0;">
-            <li style=" margin-bottom: 5px; ">Used SQflite for local database storage</li>
-            <li style="margin-bottom: 5px;">Implemented customizable note colors</li>
-            <li style="margin-bottom: 5px;">Included CRUD operations for notes management</li>
-            <li style="margin-bottom: 5px;">Provided search and sorting functionality</li>
-            <li style="margin-bottom: 5px;">Simple and intuitive user interface</li>
-        </ul>
-    </div>
-</div>
-</div>
-<!-- Notes App End -->
-        </div>
-    </section>
-    <!------------------Flutter Projects Section End ------------------>
-    <!------------------ certifications Section ------------------>
-    <section class="cards" id="services">
-        <h2 class="title">certifications</h2>
-        <div class="content">
-            <div class="card">
-                <div class="info"> <a
-                        href="https://www.linkedin.com/posts/basel-embaby-948671227_training-ccna-nti-activity-6982974217025695744-fMOi?utm_source=share&utm_medium=member_desktop"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="https://github.com/engbasel" target="_blank"><i class="fab fa-github"></i></a> -->
-                    <h3>Cisco Network Certification</h3>
-                    <p>CCNA certified by NTI Egypt, obtained through technical summer training at Creative Mansoura
-                        University in 2021.
-                        Proficient in Cisco networking technologies, including routing and switching, network
-                        fundamentals, LAN switching technologies,
-                        IPv4 and IPv6 routing technologies, WAN technologies
-                        , infrastructure services,
-                        and security fundamental</p>
-                    <a href="https://drive.google.com/file/d/1ykoZamXmF40e0biPJeUh51kp4lZh7mF_/view?usp=drive_link"
-                        target="_blank">View Certification</a>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="info">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7143314171332407296/"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/engbasel" target="_blank"><i class="fab fa-github"></i></a>
-                    <h3>ITI Flutter Summer training</h3>
-                    <p>ITI certification in 150-hour Flutter Mobile Development Training. Covered topics include Flutter
-                        framework fundamentals, UI design, Firebase integration, and communication skills for effective
-                        project
-                        collaboration. Grateful to instructor Marwa Talaat for guidance.</p>
-                    <a href="https://drive.google.com/file/d/1pLgh34dZvAU2fmVywqwcuUqP6A-iysL3/view?usp=drive_link"
-                        target="_blank">View Certification</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info"> <a href="https://www.linkedin.com/feed/update/urn:li:activity:7117507432246853632/"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/engbasel" target="_blank"><i class="fab fa-github"></i></a>
-                    <h3> Udemy Flutter Developer Certification</h3>
-                    <p>Excited to receive my Udemy Certificate of Completion for the Flutter &
-                        Dart Complete Development Course (Arabic), instructed by Tharwat Samy. Completed 54
-                        total hours of comprehensive training in Flutter and Dart programming,
-                        empowering me with essential skills for mobile app development.
-                    </p>
-                    <a href="https://drive.google.com/file/d/1a7bD1G6sOFThr_sJbBcwCbCbuskhsG09/view?usp=drive_link"
-                        target="_blank">View Certification</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info"> <a
-                        href="https://www.linkedin.com/posts/basel-embaby-948671227_certification-cybersecurity-skillsdevelopment-activity-7105904468277215232-yH-8?utm_source=share&utm_medium=member_desktop"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/engbasel" target="_blank"><i class="fab fa-github"></i></a>
-                    <h3>Cisco Cybersecurity</h3>
-                    <p>Received Cisco Cybersecurity certification from NTI Mansoura,
-                        completing a comprehensive online course spanning four weeks (120 hours) from 2-27 July 2023.
-                        Covered topics including cybercriminal tactics, threats to IT infrastructure, security
-                        frameworks, malware defense, cryptography,
-                        access controls, data integrity, and system defense strategies.
-                        Equipped with essential skills to counter cyber threats and safeguard systems and data</p>
-                    <a href="https://drive.google.com/file/d/1n3idc74qMgu3XxR9agSjaYpr7Ip9u1hl/view?usp=drive_link"
-                        target="_blank">View Certification</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info"> <a
-                        href="https://www.linkedin.com/posts/basel-embaby-948671227_aspire-uccd-mansoura-activity-6981993556844425216-6J3s?utm_source=share&utm_medium=member_desktop"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/engbasel" target="_blank"><i class="fab fa-github"></i></a>
-                    <h3>Aspire Training Solutions</h3>
-                    <p>Certified by Aspire Training Solutions at UCCD Mansoura,
-                        I successfully completed the Employability Skills Track from 24th to 28th of July,
-                        2022. This training, made possible by The American University in Cairo,
-                        equipped me with essential skills for professional development.</p>
-                    <a href="https://drive.google.com/file/d/1xZAsSOtpVRs9GnL4Y2Pv0A_zpUsw0sf_/view?usp=drive_link"
-                        target="_blank">View Certification</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info"> <a
-                        href="https://www.linkedin.com/posts/basel-embaby-948671227_professional-engineering-certificate-activity-6982975441754050560-7Tr8?utm_source=share&utm_medium=member_desktop"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/engbasel" target="_blank"><i class="fab fa-github"></i></a>
-                    <h3>Human Resource Essentials</h3>
-                    <p>Received from UCCD Mansour, I obtained a Certificate of Completion from the American Chamber
-                        of Commerce in Egypt's Career Development Center for the course in Human Resources Essentials,
-                        held from 14th to 18th August 2022.
-                        This certification marks my proficiency in essential human resources skills.</p>
-                    <a href="https://drive.google.com/file/d/1QMO1kx2spusjYtu2Rf_g9trY2GRsBKiz/view?usp=drive_link"
-                        target="_blank">View Certification</a>
-                </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/basel-embaby-948671227/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/embaby_basel" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/basel.embaby.9/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/engbasel" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
-    <!-- certifications Section End -->
 
-      <!------------------------ Latest News ------------------>
-      <section class="projects" id="projects">
-        <h2 class="title">Latest News </h2>
-        <div class="content">
-     
-        </div>
-    </section>
-    <!------------------ Latest News End ------------------>
-<!-- -------------------languages Section ---------------- -->
-    <section class="cards" id="languages">
-        <h2 class="title">Language Proficiency</h2>
-        <div class="content">
-            <div class="card">
-                <div class="info">
-                    <h3>German <img src="images/german.jpg" alt="German Flag" style="width:20px; height:auto;"></h3>
-                    <p>A2 Level</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info">
-                    <h3>English <img src="images/uk.jpg" alt="UK Flag" style="width:20px; height:auto;"></h3>
-                    <p>B1 Level</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info">
-                    <h3>Arabic <img src="images/egypt.jpg" alt="Egypt Flag" style="width:20px; height:auto;"></h3>
-                    <p>Native</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- -------------------languages Section End---------------- -->
-<!--------------------- contact Section------------------- -->
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <div>01060417664</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <div>basel.a.embaby@gmail.com</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fab fa-discord"></i>
-                </div>
-                <div class="info">
-                    <h3>Discord</h3>
-                    <a href="https://discord.com/channels/@me" target="_blank">@baselembaby</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fab fa-telegram"></i>
-                </div>
-                <div class="info">
-                    <h3>Telegram</h3>
-                    <a href="https://t.me/baselembaby" target="_blank">@baselembaby</a>
+    <!-- Services Section -->
+    <div id="services-container"></div>
 
-                </div>
+    <!-- Projects Section -->
+    <div id="projects-container"></div>
 
-            </div>
-        </div>
-    </section>
-<!--------------------- contact Section End--------------------->
-<!--------------------- footer Section --------------------->
-    <footer class="footer">
-        <p class="footer-title">Copyrights@<span>Basel Embaby</span></p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </footer>
-<!--------------------- footer Section End--------------------->
+    <!-- Certifications Section -->
+    <div id="certifications-container"></div>
 
+    <!-- Latest News Section -->
+    <div id="news-container"></div>
+
+    <!-- Languages Section -->
+    <div id="languages-container"></div>
+
+    <!-- Contact Section -->
+    <div id="contact-container"></div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Load all components
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('services-container', 'components/services.html');
+            loadComponent('projects-container', 'components/projects.html');
+            loadComponent('certifications-container', 'components/certifications.html');
+            loadComponent('news-container', 'components/news.html');
+            loadComponent('languages-container', 'components/languages.html');
+            loadComponent('contact-container', 'components/contact.html');
+            loadComponent('footer-container', 'components/footer.html');
+        });
+    </script>
 </body>
-
 </html>

@@ -1,0 +1,286 @@
+/* Component styles */
+
+/* Logo */
+.logo {
+    text-decoration: none;
+    color: #ECDFCC; /* Light text */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+/* Navigation */
+.navigation a {
+    color: #ECDFCC; /* Light text */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: #697565; /* Muted green for hover */
+}
+
+/* Main section elements */
+.main h2 {
+    color: #ECDFCC; /* Light text */
+    font-size: 1.4em;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.main h2:hover {
+    color: #fff; /* Brighter text on hover */
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #697565; /* Muted green */
+    font-size: 3em;
+    font-weight: 600;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main h2 span:hover {
+    transform: scale(1.1);
+    text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.main h3 {
+    color: #ECDFCC; /* Light text */
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: letter-spacing 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.main h3:hover {
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+.main-btn {
+    color: #ECDFCC; /* Light text */
+    background-color: #697565; /* Muted green */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #3C3D37; /* Dark gray */
+    transform: scale(1.1);
+}
+
+/* Section titles */
+.title {
+    display: flex;
+    justify-content: center;
+    color: #ECDFCC; /* Light text */
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+    background-color: #3C3D37; /* Dark gray */
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(248, 248, 248, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #ECDFCC; /* Light text */
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #ECDFCC; /* Light text */
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.card .info p {
+    color: #ECDFCC; /* Light text */
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+.card .info ul {
+    padding-left: 20px;
+}
+
+.card .info ul li {
+    color: #ECDFCC;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    position: relative;
+    list-style: none;
+}
+
+/* Custom bullet point (instead of default dots) */
+.card .info ul li::before {
+    content: "✔"; /* Custom checkmark */
+    color: #697565; /* Muted green */
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Project cards */
+.project-card {
+    background-color: #3C3D37; /* Dark gray */
+    border: 1px solid #697565; /* Muted green */
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img, .project-image video {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #ECDFCC; /* Light text */
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #697565; /* Muted green */
+}
+
+.more-details:hover {
+    color: #ECDFCC; /* Light text */
+}
+
+/* Contact section */
+.contact .icon {
+    font-size: 4.5em;
+    color: #ECDFCC; /* Light text */
+}
+
+.contact .info h3 {
+    color: #ECDFCC; /* Light text */
+}
+
+.contact .info p {
+    font-size: 1.5em;
+    color: #ECDFCC; /* Light text */
+}
+
+/* Footer */
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #697565; /* Muted green */
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: #ECDFCC; /* Light text */
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icons a i {
+    font-size: 1.8em;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.social-icons a:hover {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover Animation for Icons */
+.social-icons a:hover i {
+    transform: scale(1.2);
+}
+
+/* Custom Colors for Each Platform */
+.social-icons a:nth-child(1) { background: #333; } /* LinkedIn */
+.social-icons a:nth-child(2) { background: #333; } /* Twitter */
+.social-icons a:nth-child(3) { background: #333; } /* Facebook */
+.social-icons a:nth-child(4) { background: #333; } /* GitHub */
