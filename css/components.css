@@ -558,4 +558,179 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* Certification Section Styles */
+.certification-card {
+    background: linear-gradient(145deg, #3C3D37, #2a2b26);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 380px;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.certification-header {
+    position: relative;
+    height: 80px;
+    background: linear-gradient(to right, #697565, #3C3D37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.certification-logo {
+    height: 60px;
+    width: 60px;
+    background-color: #ECDFCC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.certification-logo img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.certification-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #ECDFCC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certification-badge i {
+    color: #3C3D37;
+    font-size: 1.2em;
+}
+
+.certification-body {
+    padding: 25px;
+}
+
+.certification-body h3 {
+    color: #ECDFCC;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.certification-issuer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.certification-issuer span {
+    color: #a8a8a8;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.certification-issuer span i {
+    color: #697565;
+    margin-right: 5px;
+}
+
+.certification-body p {
+    color: #ECDFCC;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.certification-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-link, .cert-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.social-link {
+    background-color: rgba(105, 117, 101, 0.2);
+    color: #ECDFCC;
+}
+
+.cert-link {
+    background-color: #697565;
+    color: #ECDFCC;
+}
+
+.social-link:hover, .cert-link:hover {
+    transform: translateY(-3px);
+}
+
+.social-link:hover {
+    background-color: rgba(105, 117, 101, 0.4);
+}
+
+.cert-link:hover {
+    background-color: #5a6354;
+}
+
+.social-link i, .cert-link i {
+    margin-right: 5px;
+}
+
+/* Platform-specific icon colors */
+.certification-actions a:nth-child(1) i {
+    color: #0077B5; /* LinkedIn blue */
+}
+
+.certification-actions a:nth-child(2) i {
+    color: #6e5494; /* GitHub purple */
+}
+
+.certification-actions a:nth-child(3) i {
+    color: #ECDFCC; /* Certificate icon */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .certification-card {
+        width: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certification-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .certification-issuer {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
 
