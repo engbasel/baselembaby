@@ -1,7 +1,7 @@
 // Function to download CV
 function downloadCV() {
-    const cvUrl = "images/basel-Embaby-CV.pdf";
-    const fileName = "Basel_Embaby_CV.pdf";
+    const cvUrl = "images/Basel Ahmed Embaby Mobile Developer.pdf";
+    const fileName = "Basel Ahmed Embaby Mobile Developer.pdf";
 
     const link = document.createElement("a");
     link.href = cvUrl;
