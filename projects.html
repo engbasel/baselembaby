@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="images/B.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Projects - Basel Embaby</title>
+    <style>
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2em;
+            color: #edf0e0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navigation a {
+            font-size: 1.1em;
+            color: #edf0e0;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+            transition: .3s;
+        }
+
+        .navigation a:hover {
+            color: #007bff;
+        }
+
+        /* Projects Grid Styles */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 120px; /* Increased margin to account for fixed header */
+        }
+
+        .project-card {
+            background: #333333;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #3c3d37;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            background-color: #333333;
+        }
+
+        .project-title {
+            font-size: 1.2em;
+            color: #edf0e0;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-description {
+            color: #edf0e0;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-size: 1em;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tech-tag {
+            background: #444;
+            color: #edf0e0;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            font-size: 1.1em;
+            color: #edf0e0;
+            text-decoration: none;
+            margin-right: 10px;
+            animation: moveAnimation 3s infinite linear;
+        }
+
+        .project-link:hover {
+            color: #007bff;
+        }
+
+        @keyframes moveAnimation {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            color: #edf0e0;
+            margin-top: 120px; /* Increased margin to account for fixed header */
+            margin-bottom: 2rem;
+            font-size: 2.5em;
+        }
+
+        /* Back to Home Button */
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333333;
+            color: #edf0e0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 1px solid #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            background: #444;
+            transform: translateY(-2px);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 5%;
+            }
+
+            .navigation a {
+                margin-left: 20px;
+                font-size: 1em;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+                margin-top: 100px;
+            }
+
+            .page-title {
+                margin-top: 100px;
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">Basel Embaby</a>
+        <nav class="navigation">
+            <a href="/#services">Services</a>
+            <a href="/#projects">Projects</a>
+            <a href="/#freelance">Freelance</a>
+            <a href="/#contact">Contact</a>
+            <a href="/info">About Me</a>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <h1 class="page-title">My Projects</h1>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="images/CircuitHub.jpg" alt="CircuitHub" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">CircuitHub</h3>
+                <p class="project-description">A multi-feature AI-powered platform providing chatbot assistance and smart data handling for products and customers.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">AI</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/engbasel/CircuitHub" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="images/BloodBankApp.jpg" alt="Blood Bank App" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Donor - بنك الدم الإلكتروني</h3>
+                <p class="project-description">تطبيق يساعد في ربط المتبرعين بالدم مع المستشفيات بطريقة سريعة وآمنة بناءً على فصيلة الدم والموقع الجغرافي.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Maps</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/engbasel/BloodBankApp" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <img src="images/POSDashboard.jpg" alt="POS Dashboard" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">POS Dashboard - إدارة المحلات</h3>
+                <p class="project-description">نظام مخصص لأصحاب المحلات الصغيرة لإدارة عمليات البيع، متابعة المخزون، وتحليل الأرباح بشكل سهل وبسيط.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter Web</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Charts</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/engbasel/POS-Dashboard" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card">
+            <img src="images/ChatApp.jpg" alt="Chat App" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Real-time Chat App</h3>
+                <p class="project-description">تطبيق محادثة فورية يدعم إرسال واستقبال الرسائل بين المستخدمين مع واجهة مستخدم بسيطة وسهلة الاستخدام.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Real-time</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/engbasel/ChatApp" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="project-card">
+            <img src="images/NotesApp.jpg" alt="Notes App" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Notes App</h3>
+                <p class="project-description">A simple app for taking notes with customizable colors for each note.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">Local Storage</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/engbasel/Notes-App-SQflite" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Source code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home Button -->
+    <a href="/" class="back-home">
+        <i class="fas fa-home"></i> Back to Home
+    </a>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Load footer component
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('footer-container', 'components/footer.html');
+        });
+    </script>
+</body>
+</html> 
