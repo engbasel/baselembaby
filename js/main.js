@@ -66,4 +66,46 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize contact form handler after a slight delay to ensure the form is loaded
     setTimeout(handleContactForm, 1000);
+
+    // Menu functionality
+    const menuIcon = document.querySelector('.menu-icon');
+    const sideMenu = document.querySelector('.side-menu');
+    const overlay = document.querySelector('.side-menu-overlay');
+    const closeMenu = document.querySelector('.close-menu');
+
+    // Function to open menu
+    function openMenu() {
+        sideMenu.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    }
+
+    // Function to close menu
+    function closeMenuHandler() {
+        sideMenu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Event listeners
+    menuIcon.addEventListener('click', openMenu);
+    closeMenu.addEventListener('click', closeMenuHandler);
+    overlay.addEventListener('click', closeMenuHandler);
+
+    // Close menu when clicking on menu items
+    const menuItems = document.querySelectorAll('.side-menu-item');
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (!item.id === 'change-language') {
+                closeMenuHandler();
+            }
+        });
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sideMenu.classList.contains('active')) {
+            closeMenuHandler();
+        }
+    });
 });
