@@ -91,10 +91,53 @@
 .title {
     display: flex;
     justify-content: center;
-    color: #ECDFCC; /* Light text */
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
+}
+
+/* News List Styles */
+.news-list {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+    list-style: none;
+    background: #2a2b26;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 28px;
+    animation: fadeIn 1s;
+}
+.news-list li {
+    position: relative;
+    color: #ECDFCC;
+    font-size: 1.08em;
+    line-height: 1.7em;
+    margin-bottom: 18px;
+    padding-left: 32px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.news-list li:last-child {
+    margin-bottom: 0;
+}
+.news-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    color: #697565;
+    font-size: 1.15em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+@media (max-width: 700px) {
+    .news-list {
+        padding: 16px 8px;
+        font-size: 0.98em;
+    }
+    .news-list li {
+        padding-left: 26px;
+    }
 }
 
 /* Cards */
