@@ -1,3 +1,6 @@
+// Import Firebase functions
+import { db, collection, addDoc, serverTimestamp } from './firebase-config.js';
+
 // Function to download CV
 function downloadCV() {
     const cvUrl = "images/Basel Ahmed Embaby Mobile Developer.pdf";
@@ -11,6 +14,9 @@ function downloadCV() {
     document.body.removeChild(link);
 }
 
+// Make downloadCV available globally
+window.downloadCV = downloadCV;
+
 // Function to load HTML components
 function loadComponent(containerId, componentPath) {
     fetch(componentPath)
@@ -23,31 +29,44 @@ function loadComponent(containerId, componentPath) {
         });
 }
 
-// Function to handle contact form submission
-function handleContactForm() {
+// Function to handle contact form submission with Firebase
+async function handleContactForm() {
     const contactForm = document.getElementById('contactForm');
-    
+
     if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
+        contactForm.addEventListener('submit', async function(event) {
             event.preventDefault();
-            
+
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
-            
-            // You can replace this with your actual form submission logic
-            // For now, we'll just open an email client with the form data
-            
-            const mailtoLink = `mailto:basel.a.embaby@gmail.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-            
-            window.location.href = mailtoLink;
-            
-            // Reset form after submission
-            contactForm.reset();
-            
-            // Show success message (you can enhance this with a proper notification)
-            alert('Thank you for your message! I will get back to you soon.');
+
+            try {
+                // Save to Firebase Firestore
+                await addDoc(collection(db, 'contacts'), {
+                    name: name,
+                    email: email,
+                    subject: subject || 'Contact from Portfolio',
+                    message: message,
+                    timestamp: serverTimestamp(),
+                    status: 'new'
+                });
+
+                // Reset form after successful submission
+                contactForm.reset();
+
+                // Show success message
+                alert('شكراً لرسالتك! تم حفظ رسالتك بنجاح وسأرد عليك قريباً.');
+
+                // Optional: Also open email client
+                const mailtoLink = `mailto:basel.a.embaby@gmail.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+                window.location.href = mailtoLink;
+
+            } catch (error) {
+                console.error('Error saving message to Firebase:', error);
+                alert('عذراً، حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.');
+            }
         });
     }
 }

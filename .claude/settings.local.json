@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dir \"d:\\courses\\my_portfolio\\baselembaby\\images\" /b)"
+      "Bash(dir \"d:\\courses\\my_portfolio\\baselembaby\\images\" /b)",
+      "Bash(dir /b)"
     ],
     "deny": [],
     "ask": []

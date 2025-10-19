@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - Basel Embaby</title>
+    <link rel="shortcut icon" href="../images/B.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fas fa-user-shield"></i> لوحة التحكم</h2>
+            <button class="close-sidebar" id="closeSidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-menu">
+            <a href="#" class="menu-item active" data-page="overview">
+                <i class="fas fa-home"></i>
+                <span>نظرة عامة</span>
+            </a>
+            <a href="#" class="menu-item" data-page="projects">
+                <i class="fas fa-project-diagram"></i>
+                <span>المشاريع</span>
+            </a>
+            <a href="#" class="menu-item" data-page="services">
+                <i class="fas fa-cogs"></i>
+                <span>الخدمات</span>
+            </a>
+            <a href="#" class="menu-item" data-page="news">
+                <i class="fas fa-newspaper"></i>
+                <span>الأخبار</span>
+            </a>
+            <a href="#" class="menu-item" data-page="messages">
+                <i class="fas fa-envelope"></i>
+                <span>الرسائل</span>
+                <span class="badge" id="messagesBadge">0</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <button class="btn btn-danger btn-block" id="logoutBtn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>تسجيل الخروج</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 id="pageTitle">نظرة عامة</h1>
+            <div class="user-info">
+                <span id="userEmail">admin@basel.com</span>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <main class="content" id="mainContent">
+            <!-- Content will be loaded dynamically -->
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner-large"></div>
+    </div>
+
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

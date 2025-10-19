@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منطقة المدير - Basel Embaby</title>
+    <link rel="shortcut icon" href="../images/B.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+            min-height: 100vh;
+            color: #edf0e0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #20c997;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(51, 51, 51, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #444;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(32, 201, 151, 0.2);
+            border-color: #20c997;
+        }
+
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #20c997;
+        }
+
+        .card h2 {
+            color: #20c997;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .card p {
+            color: #aaa;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #20c997 0%, #17a589 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(32, 201, 151, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #555 0%, #444 100%);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 8px 20px rgba(85, 85, 85, 0.4);
+        }
+
+        .info-section {
+            background: rgba(33, 150, 243, 0.1);
+            border: 1px solid rgba(33, 150, 243, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .info-section h3 {
+            color: #2196f3;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .info-section ul {
+            list-style: none;
+            padding-right: 0;
+        }
+
+        .info-section li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #aaa;
+        }
+
+        .info-section li:last-child {
+            border-bottom: none;
+        }
+
+        .info-section li strong {
+            color: #20c997;
+            margin-left: 10px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #20c997;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-home">
+            <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
+        </a>
+
+        <div class="header">
+            <h1><i class="fas fa-shield-alt"></i> منطقة المدير</h1>
+            <p>إدارة محتوى الموقع بسهولة وأمان</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <h2>تسجيل الدخول</h2>
+                <p>الوصول إلى لوحة التحكم الخاصة بك</p>
+                <a href="login.html" class="btn">
+                    <i class="fas fa-arrow-left"></i> تسجيل الدخول
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h2>إنشاء حساب مدير</h2>
+                <p>إنشاء حساب مدير جديد (للمرة الأولى فقط)</p>
+                <a href="create-admin.html" class="btn btn-secondary">
+                    <i class="fas fa-plus-circle"></i> إنشاء حساب
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h2>دليل الاستخدام</h2>
+                <p>تعليمات شاملة لاستخدام لوحة التحكم</p>
+                <a href="../ADMIN_GUIDE.md" class="btn btn-secondary" download>
+                    <i class="fas fa-download"></i> تحميل الدليل
+                </a>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3><i class="fas fa-info-circle"></i> معلومات مهمة</h3>
+            <ul>
+                <li>
+                    <i class="fas fa-check-circle" style="color: #4caf50;"></i>
+                    <strong>الأمان:</strong> تأكد من استخدام كلمة مرور قوية وعدم مشاركتها مع أحد
+                </li>
+                <li>
+                    <i class="fas fa-check-circle" style="color: #4caf50;"></i>
+                    <strong>البيانات:</strong> جميع البيانات محفوظة بشكل آمن في Firebase
+                </li>
+                <li>
+                    <i class="fas fa-check-circle" style="color: #4caf50;"></i>
+                    <strong>الوظائف:</strong> يمكنك إدارة المشاريع، الخدمات، الأخبار، والرسائل
+                </li>
+                <li>
+                    <i class="fas fa-exclamation-triangle" style="color: #ff9800;"></i>
+                    <strong>تنبيه:</strong> احذف ملف create-admin.html بعد إنشاء الحساب!
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-section" style="margin-top: 30px; background: rgba(76, 175, 80, 0.1); border-color: rgba(76, 175, 80, 0.3);">
+            <h3 style="color: #4caf50;"><i class="fas fa-rocket"></i> خطوات البدء السريع</h3>
+            <ul>
+                <li><strong>1.</strong> تأكد من إعداد Firebase (Authentication + Firestore)</li>
+                <li><strong>2.</strong> أنشئ حساب المدير من الزر أعلاه</li>
+                <li><strong>3.</strong> سجّل الدخول إلى لوحة التحكم</li>
+                <li><strong>4.</strong> ابدأ في إضافة المحتوى!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="module">
+        import { auth, onAuthStateChanged } from '../js/firebase-config.js';
+
+        // Check if user is already logged in
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in, show option to go to dashboard
+                const loginCard = document.querySelector('.cards .card:first-child');
+                loginCard.innerHTML = `
+                    <div class="card-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h2>لوحة التحكم</h2>
+                    <p>مرحباً! أنت مسجل دخول بالفعل</p>
+                    <a href="dashboard.html" class="btn">
+                        <i class="fas fa-arrow-left"></i> الذهاب للوحة التحكم
+                    </a>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

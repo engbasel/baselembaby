@@ -235,7 +235,9 @@
         <p>استكشف مجموعة من أبرز مشاريعي البرمجية التي قمت بتطويرها</p>
       </header>
 
-      <div class="projects-grid">
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects will be loaded dynamically from Firebase -->
+        <!-- Fallback content (will be replaced): -->
         <!-- Stronger Kiddoz App -->
         <div class="project-card">
           <div class="project-media">
@@ -447,27 +449,6 @@
       </div>
     </div>
 
-    <script>
-      // Add smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-
-      // Add loading state for buttons
-      document.querySelectorAll(".project-link").forEach((button) => {
-        button.addEventListener("click", function () {
-          this.innerHTML =
-            '<i class="fas fa-spinner fa-spin"></i> جاري التحميل...';
-          setTimeout(() => {
-            this.innerHTML = '<i class="fas fa-check"></i> تم';
-          }, 1500);
-        });
-      });
-    </script>
+    <script type="module" src="js/projects-loader.js"></script>
   </body>
 </html>
