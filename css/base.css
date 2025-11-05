@@ -10,12 +10,12 @@
 }
 
 body {
-    background-color: #3C3D37; /* Dark gray background */
+    background-color: #0C2B4E; /* Navy blue background */
 }
 
 /* Typography */
 h2, h3, p {
-    color: #ECDFCC; /* Light text */
+    color: #F4F4F4; /* Light text */
 }
 
 a {
@@ -24,8 +24,9 @@ a {
 
 /* Color variables */
 :root {
-    --dark-bg: #181C14;
-    --dark-gray: #3C3D37;
-    --light-text: #ECDFCC;
-    --muted-green: #697565;
+    --dark-bg: #0C2B4E;
+    --primary-blue: #1A3D64;
+    --accent-blue: #1D546C;
+    --light-text: #F4F4F4;
+    --main-color: #1D546C;
 }
