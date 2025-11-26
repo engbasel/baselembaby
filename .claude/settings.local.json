@@ -16,7 +16,11 @@
       "Bash(git push:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(cmd /c dir /b)",
+      "Bash(cmd /c del /f \".github\\workflows\\deploy.yml\")",
+      "Bash(npm uninstall:*)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []
