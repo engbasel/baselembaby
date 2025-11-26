@@ -1,0 +1,11 @@
+/* Base reset - global styles are imported in App.jsx */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

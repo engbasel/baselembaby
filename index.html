@@ -1,142 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="shortcut icon" href="images/B.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Basel Embaby</title>
-    <script type="module" src="js/main.js"></script>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <a href="#" class="logo">Basel Embaby</a>
-        <nav class="navigation">
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#freelance">Freelance</a>
-            <a href="#contact">Contact</a>
-            <a href="/info">About Me</a>
-        </nav>
-        <div class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
-
-    <!-- Side Menu -->
-    <div class="side-menu-overlay"></div>
-    <div class="side-menu">
-        <div class="side-menu-header">
-            <h3>Menu</h3>
-            <button class="close-menu">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <nav class="side-menu-nav">
-            <a href="#" class="side-menu-item">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-            </a>
-            <a href="#projects" class="side-menu-item">
-                <i class="fas fa-project-diagram"></i>
-                <span>Projects</span>
-            </a>
-            <a href="/info" class="side-menu-item">
-                <i class="fas fa-user"></i>
-                <span>About Me</span>
-            </a>
-            <a href="#services" class="side-menu-item">
-                <i class="fas fa-cogs"></i>
-                <span>Services</span>
-            </a>
-            <a href="#freelance" class="side-menu-item">
-                <i class="fas fa-laptop-code"></i>
-                <span>Freelance</span>
-            </a>
-            <a href="#blog" class="side-menu-item">
-                <i class="fas fa-blog"></i>
-                <span>Blog</span>
-            </a>
-            <a href="#" class="side-menu-item" id="change-language">
-                <i class="fas fa-language"></i>
-                <span>Change Language</span>
-            </a>
-            <a href="#" class="side-menu-item">
-                <i class="fas fa-cog"></i>
-                <span>Settings</span>
-            </a>
-            <a href="#contact" class="side-menu-item">
-                <i class="fas fa-envelope"></i>
-                <span>Contact</span>
-            </a>
-            <a href="javascript:void(0);" class="side-menu-item" onclick="downloadCV()">
-                <i class="fas fa-download"></i>
-                <span>Download CV</span>
-            </a>
-        </nav>
-    </div>
-
-    <!-- Main Section -->
-    <section class="main">
-        <div>
-            <h2>Hello, I'm <br><span>Basel Embaby</span></h2>
-            <h3>Mobile App Developer</h3>
-            
-            <a href="#projects" class="main-btn">View my work</a>          
-            <a href="javascript:void(0);" class="main-btn" onclick="downloadCV()">Download CV</a>
-
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/basel-embaby-948671227/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/embaby_basel" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/basel.embaby.9/" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://github.com/engbasel" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <div id="services-container"></div>
-
-    <!-- Projects Section -->
-    <div id="projects-container"></div>
-
-    <!-- Freelance Section -->
-    <div id="freelance-container"></div>
-
-    <!-- Certifications Section -->
-    <div id="certifications-container"></div>
-
-    <!-- Languages Section -->
-    <div id="languages-container"></div>
-
-    <!-- Contact Section -->
-    <div id="contact-container"></div>
-
-    <!-- Footer -->
-    <div id="footer-container"></div>
-
-    <script>
-        // Load all components
-        document.addEventListener('DOMContentLoaded', function() {
-            loadComponent('services-container', 'components/services.html');
-            loadComponent('projects-container', 'components/projects.html');
-            loadComponent('freelance-container', 'components/freelance.html');
-            loadComponent('certifications-container', 'components/certifications.html');
-            loadComponent('languages-container', 'components/languages.html');
-            loadComponent('contact-container', 'components/contact.html');
-            loadComponent('footer-container', 'components/footer.html');
-        });
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/assets/images/B.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basel Embaby - Mobile App Developer specializing in Flutter, AI Integration, and IoT solutions" />
+    <meta name="keywords" content="Basel Embaby, Mobile App Developer, Flutter Developer, AI Integration, IoT, Web Development" />
+    <meta name="author" content="Basel Embaby" />
+    <title>Basel Embaby - Mobile App Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

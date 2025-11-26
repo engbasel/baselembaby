@@ -4,7 +4,14 @@
       "Bash(dir \"d:\\courses\\my_portfolio\\baselembaby\\images\" /b)",
       "Bash(dir /b)",
       "Bash(dir:*)",
-      "Bash(components.css)"
+      "Bash(components.css)",
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(pkill:*)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

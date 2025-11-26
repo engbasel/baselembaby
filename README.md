@@ -1,66 +1,143 @@
-# 🎨 Basel Embaby Portfolio
+# Basel Embaby - Portfolio Website
 
-## 🌟 About Me
-Hi, I'm **Basel Ahmed Embaby**, a passionate **Flutter Developer** and **CCE Department student at Mansoura University**. I specialize in mobile app development, with a focus on building user-friendly applications that solve real-world problems.
+A modern, responsive portfolio website built with React + Vite, featuring a professional dark theme design.
 
-🔹 **Skills:** Flutter, Dart, Firebase, REST APIs, UI/UX Design  
-🔹 **Projects:** Mobile applications for CCE students, gym tracking app, medical reservation system  
-🔹 **Interests:** Mobile development, system design, AI integration in mobile apps  
-🔹 **Certifications:** Photoshop certified  
-🔹 **GPA:** 3.5 (**Very Good**)  
-🔹 **Languages:** B1 **English**, A2 **German**  
+## 🚀 Features
 
-## 🚀 Repository Overview
-This repository hosts my **personal portfolio website**, built using HTML, CSS, and JavaScript. It showcases my work, skills, and contact information.
+- ✨ Modern UI with dark theme
+- 📱 Fully responsive design
+- 🎨 Smooth animations and transitions
+- 🔥 Firebase integration for contact form
+- ⚡ Fast performance with Vite
+- 🎯 Component-based architecture
+- 🌐 SEO optimized
 
-## 📁 Repository Structure
+## 🛠️ Technologies Used
+
+- **Frontend Framework**: React 18
+- **Build Tool**: Vite
+- **Backend/Database**: Firebase (Firestore)
+- **Styling**: Custom CSS with CSS Variables
+- **Icons**: Font Awesome 5.15.4
+
+## 📂 Project Structure
+
 ```
-baselembaby/
-│-- .github/
-│   ├── workflows/
-│       ├── deploy.yml  # GitHub Actions workflow for deployment
-│-- assets/
-│   ├── images/  # Project images and profile photos
-│   ├── css/
-│       ├── style.css  # Main stylesheet
-│   ├── js/
-│       ├── script.js  # JavaScript functionality
-│-- pages/
-│   ├── about.html  # About me
-│   ├── projects.html  # Projects showcase
-│   ├── contact.html  # Contact details
-│-- .gitignore  # Ignore unnecessary files
-│-- CNAME  # Custom domain configuration
-│-- index.html  # Main landing page
-│-- README.md  # Documentation
+react-portfolio/
+├── src/
+│   ├── components/          # React components
+│   │   ├── Header.jsx       # Navigation header
+│   │   ├── Hero.jsx         # Hero section
+│   │   ├── Services.jsx     # Services showcase
+│   │   ├── Projects.jsx     # Portfolio projects
+│   │   ├── Freelance.jsx    # Freelance platforms
+│   │   ├── Certifications.jsx
+│   │   ├── Languages.jsx    # Language proficiency
+│   │   ├── Contact.jsx      # Contact form with Firebase
+│   │   └── Footer.jsx       # Footer section
+│   ├── assets/              # Images and static files
+│   ├── styles/              # Global styles
+│   │   └── global.css       # CSS variables and utilities
+│   ├── firebase.js          # Firebase configuration
+│   ├── App.jsx              # Main app component
+│   ├── main.jsx             # Entry point
+│   └── index.css            # Base styles
+├── public/                  # Public assets
+├── index.html               # HTML template
+├── package.json             # Dependencies
+└── vite.config.js           # Vite configuration
 ```
 
-## 🌐 Live Preview
-🚀 **Visit my portfolio:** [www.baselembaby.online](http://www.baselembaby.online)
+## 🎨 Design System
 
-## 🛠️ Setup & Deployment
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/engbasel/baselembaby.git
-   ```
-2. **Navigate to the project directory:**
-   ```sh
-   cd baselembaby
-   ```
-3. **Make changes and push updates:**
-   ```sh
-   git add .
-   git commit -m "Updated styles and content"
-   git push origin main
-   ```
+### Color Palette
+- **Background Primary**: `#0B0F1A`
+- **Background Secondary**: `#111827`
+- **Card Background**: `#1a1f2e`
+- **Primary Accent**: `#0D47A1`
+- **Secondary Accent**: `#1A73E8`
+- **Text Primary**: `#E3E7EC`
+- **Text Secondary**: `#9CA3AF`
 
-## 📬 Contact Me
-📛 **Name:** Basel Ahmed Embaby  
-📍 **Locations:** Cairo, Mansoura  
-📞 **Phone:** +20 1060417664  
-📧 **Email:** basel.a.embaby@gmail.com  
-🔗 **LinkedIn:** [linkedin.com/in/basel-embaby](https://linkedin.com/in/basel-embaby)  
-💻 **GitHub:** [github.com/engbasel](https://github.com/engbasel)  
+## 🚀 Getting Started
 
-## 📜 License
-This project is licensed under the **MIT License**. Feel free to fork, modify, and use it!
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Navigate to the project directory:
+```bash
+cd react-portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to:
+```
+http://localhost:5173
+```
+
+## 📦 Build for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory.
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 🌐 Deployment
+
+### Deploy to Vercel
+
+```bash
+npm i -g vercel
+vercel
+```
+
+### Deploy to Netlify
+
+```bash
+npm run build
+# Then drag dist/ folder to Netlify Drop
+```
+
+## 📱 Features Overview
+
+1. **Header**: Responsive navigation with mobile menu
+2. **Hero**: Eye-catching introduction with CTA buttons
+3. **Services**: Showcase of technical skills and services
+4. **Projects**: Portfolio of completed projects with videos
+5. **Freelance**: Links to freelance platforms
+6. **Certifications**: Professional certifications
+7. **Languages**: Language proficiency levels
+8. **Contact**: Interactive contact form with Firebase integration
+9. **Footer**: Social links and site navigation
+
+## 👨‍💻 Author
+
+**Basel Embaby**
+- Email: basel.a.embaby@gmail.com
+- LinkedIn: [Basel Embaby](https://www.linkedin.com/in/basel-embaby-948671227/)
+- GitHub: [@engbasel](https://github.com/engbasel)
+
+---
+
+Made with ❤️ using React & Firebase
