@@ -1,15 +1,15 @@
 /* ==================== CSS VARIABLES - DARK THEME ==================== */
 :root {
   /* Primary Colors */
-  --bg-primary: #0B0F1A;
-  --bg-secondary: #111827;
-  --bg-card: #1a1f2e;
-  --bg-hover: #1f2937;
+  --bg-primary: #030A1C; /* Rich black */
+  --bg-secondary: #051024; /* Black pearl */
+  --bg-card: #061831; /* Midnight */
+  --bg-hover: #0B1C3E; /* Navy */
 
   /* Accent Colors */
-  --color-primary: #0D47A1;
-  --color-accent: #1A73E8;
-  --color-accent-light: #4A90E2;
+  --color-primary: #11244A; /* Oxford blue */
+  --color-accent: #0B1C3E; /* Navy */
+  --color-accent-light: #061831; /* Midnight */
   --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-error: #EF4444;
@@ -20,8 +20,8 @@
   --text-muted: #6B7280;
 
   /* Border & Divider */
-  --border-color: #1f2937;
-  --divider-color: #374151;
+  --border-color: #0B1C3E;
+  --divider-color: #11244A;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
@@ -30,9 +30,9 @@
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #0D47A1 0%, #1A73E8 100%);
-  --gradient-accent: linear-gradient(135deg, #1A73E8 0%, #4A90E2 100%);
-  --gradient-card: linear-gradient(145deg, #1a1f2e 0%, #111827 100%);
+  --gradient-primary: linear-gradient(135deg, #11244A 0%, #0B1C3E 100%);
+  --gradient-accent: linear-gradient(135deg, #0B1C3E 0%, #061831 100%);
+  --gradient-card: linear-gradient(145deg, #061831 0%, #051024 100%);
 
   /* Spacing */
   --spacing-xs: 0.5rem;
