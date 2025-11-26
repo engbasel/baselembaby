@@ -12,7 +12,10 @@
       "Bash(pkill:*)",
       "Bash(taskkill //F //IM node.exe)",
       "Bash(npm run build:*)",
-      "Bash(npm run deploy:*)"
+      "Bash(npm run deploy:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
