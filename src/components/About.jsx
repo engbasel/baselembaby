@@ -78,7 +78,7 @@ const About = () => {
             >
               <p>
                 I'm a{' '}
-                <span className="text-[var(--color-text)] font-medium">Senior Software Engineer</span>{' '}
+                <span className="text-[var(--color-text)] font-medium">Software Engineer</span>{' '}
                 with 5+ years of experience building digital products. My journey started with curiosity about how apps work and evolved into a passion for crafting them.
               </p>
               <p>

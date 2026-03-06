@@ -43,7 +43,7 @@ const HeroBento = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-32 pb-14 md:pt-36 md:pb-18 lg:pt-40">
+    <section id="hero" className="min-h-screen flex items-center pt-40 pb-14 md:pt-44 md:pb-18 lg:pt-48">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
 
@@ -87,7 +87,7 @@ const HeroBento = () => {
                 custom={2}
                 className="text-[17px] text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-md"
               >
-                UI/UX Designer & Senior Front-End Engineer crafting high-performance{' '}
+                UI/UX Designer & Front-End Engineer crafting high-performance{' '}
                 <span className="text-[var(--color-text)]">Flutter</span> mobile apps and{' '}
                 <span className="text-[var(--color-text)]">React</span> web experiences.
               </motion.p>
@@ -142,7 +142,7 @@ const HeroBento = () => {
                     Basel Embaby
                   </p>
                   <h2 className="font-display text-[18px] sm:text-xl font-semibold text-white tracking-[-0.03em] leading-tight">
-                    UI/UX Designer · Front-End Engineer
+                     Software Engineer
                   </h2>
                 </div>
               </div>

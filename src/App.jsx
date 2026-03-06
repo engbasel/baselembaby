@@ -11,7 +11,7 @@ import AllProjects from './pages/AllProjects';
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-[var(--color-bg)]">
+    <div className="min-h-screen">
       <Navbar />
       <main>
         <HeroBento />
@@ -27,7 +27,7 @@ function HomePage() {
 
 function App() {
   useEffect(() => {
-    document.title = 'Basel Embaby - Senior Software Engineer';
+    document.title = 'Basel Embaby - Software Engineer';
   }, []);
 
   return (
