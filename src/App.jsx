@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroBento from './components/HeroBento';
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
 import Expertise from './components/Expertise';
 import About from './components/About';
 import Contact from './components/Contact';
