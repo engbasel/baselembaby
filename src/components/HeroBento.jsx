@@ -43,7 +43,7 @@ const HeroBento = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-40 pb-14 md:pt-44 md:pb-18 lg:pt-48">
+    <section id="hero" className="min-h-screen flex items-center pt-10 pb-14 md:pt-14 md:pb-18 lg:pt-16">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
 
