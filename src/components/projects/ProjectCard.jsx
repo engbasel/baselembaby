@@ -1,9 +1,21 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { useRef, useState, useEffect } from 'react';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 
 const ProjectCard = ({ project, index }) => {
   const cardRef = useRef(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (!project.images || project.images.length <= 1) return;
+
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
+    }, 4000); // Change every 4 seconds
+
+    return () => clearInterval(timer);
+  }, [project.images]);
+
   const { scrollYProgress } = useScroll({
     target: cardRef,
     offset: ['start end', 'end start'],
@@ -26,16 +38,31 @@ const ProjectCard = ({ project, index }) => {
             style={{ y }}
             className={`relative h-72 lg:h-96 lg:col-span-7 ${index % 2 === 1 ? 'lg:order-2' : ''} overflow-hidden`}
           >
-            <motion.img
-              src={project.image}
-              alt={project.title}
-              className="absolute inset-0 w-full h-full object-cover"
-              initial={{ scale: 1 }}
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            />
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentImageIndex}
+                src={project.images[currentImageIndex]}
+                alt={project.title}
+                className="absolute inset-0 w-full h-full object-cover"
+                initial={{ opacity: 0, scale: 1.1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              />
+            </AnimatePresence>
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)] via-transparent to-transparent opacity-60 lg:opacity-0" />
+
+            {/* Pagination Dots */}
+            <div className="absolute bottom-4 right-4 flex gap-1.5 z-10">
+              {project.images.map((_, i) => (
+                <div
+                  key={i}
+                  className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${i === currentImageIndex ? 'bg-white w-4' : 'bg-white/40'
+                    }`}
+                />
+              ))}
+            </div>
 
             {/* Category Badge */}
             <motion.div

@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, Github, ArrowUpRight, ArrowLeft } from 'lucide-react';
 
@@ -10,7 +11,11 @@ const allProjects = [
     description:
       'End-to-end web platform to manage property units, reservations, and guest bookings with an analytics dashboard for revenue, properties, bookings, and users, plus FCM-powered notifications and mobile integration.',
     tags: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Flutter'],
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+    ],
     year: '2024',
     category: 'Full-Stack Web App',
     links: { live: 'https://light-house-web-dashboard.vercel.app', github: 'https://github.com/engbasel/Light-House-web-dashboard' },
@@ -22,7 +27,11 @@ const allProjects = [
     description:
       'Bilingual (AR/EN) fashion e-commerce platform with full admin dashboard for products, orders, customers, automated post-purchase emails, Google OAuth2, and integrated Bosta shipping workflow.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Appwrite', 'Nodemailer', 'n8n'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+      'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80',
+      'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80',
+    ],
     year: '2024',
     category: 'Web App',
     links: { live: 'https://mis-five5.vercel.app', github: 'https://github.com/engbasel/mis-five5' },
@@ -34,7 +43,11 @@ const allProjects = [
     description:
       'Digital menu and ordering platform where restaurants manage menus, receive customer orders via WhatsApp, and track them through an admin dashboard backed by a self-hosted backend.',
     tags: ['React', 'Supabase', 'Node.js'],
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&q=80',
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
+    ],
     year: '2024',
     category: 'Web App',
     links: { live: 'https://menu-hub-phi.vercel.app', github: 'https://github.com/engbasel/menuHUB' },
@@ -46,7 +59,11 @@ const allProjects = [
     description:
       'E-commerce web app with full shopping flow including product catalog, secure cart, user auth, responsive UI, real-time inventory, payments, and an admin dashboard.',
     tags: ['JavaScript', 'React.js', 'Node.js', 'Appwrite', 'Vercel'],
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+      'https://images.unsplash.com/photo-1556740734-754f4ba87364?w=800&q=80',
+      'https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=800&q=80',
+    ],
     year: '2023',
     category: 'Web App',
     links: { live: 'https://shemyra-family-store.vercel.app/', github: '#' },
@@ -58,7 +75,11 @@ const allProjects = [
     description:
       'Flutter web application for a home appliances store with an integrated ERP system to manage products, inventory, and store operations from a centralized admin dashboard.',
     tags: ['Flutter Web', 'Firebase Auth', 'Cloud Firestore', 'Vercel'],
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
+      'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&q=80',
+      'https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=800&q=80',
+    ],
     year: '2023',
     category: 'Web App',
     links: { live: 'https://almaseyah.vercel.app', github: '#' },
@@ -70,7 +91,11 @@ const allProjects = [
     description:
       'Cross-platform Flutter app that helps parents follow developmental programs, track child progress, and access educational content with offline-first caching and advanced navigation.',
     tags: ['Flutter', 'Dart', 'BLoC', 'GoRouter', 'Drift (SQLite)', 'Firebase'],
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80',
+      'https://images.unsplash.com/photo-1515488142435-05e8381dc3d6?w=800&q=80',
+      'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&q=80',
+    ],
     year: '2022',
     category: 'Mobile App',
     links: { live: 'https://strongerkiddos.com/', github: '#' },
@@ -78,6 +103,16 @@ const allProjects = [
 ];
 
 const ProjectCard = ({ project, index }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (!project.images || project.images.length <= 1) return;
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [project.images]);
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 40 }}
@@ -88,14 +123,30 @@ const ProjectCard = ({ project, index }) => {
       <div className="card-shell bento-glow">
         {/* Image */}
         <div className="relative h-56 overflow-hidden">
-          <motion.img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          />
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={currentImageIndex}
+              src={project.images[currentImageIndex]}
+              alt={project.title}
+              className="absolute inset-0 w-full h-full object-cover"
+              initial={{ opacity: 0, scale: 1.1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            />
+          </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)] via-transparent to-transparent opacity-60" />
+
+          {/* Pagination Dots */}
+          <div className="absolute bottom-3 right-3 flex gap-1 z-10">
+            {project.images.map((_, i) => (
+              <div
+                key={i}
+                className={`w-1 h-1 rounded-full transition-all duration-300 ${i === currentImageIndex ? 'bg-white w-3' : 'bg-white/40'
+                  }`}
+              />
+            ))}
+          </div>
 
           {/* Category Badge */}
           <div className="absolute top-4 left-4">
