@@ -14,7 +14,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
     year: '2024',
     category: 'Full-Stack Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://light-house-web-dashboard.vercel.app', github: 'https://github.com/engbasel/Light-House-web-dashboard' },
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
     year: '2024',
     category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://mis-five5.vercel.app', github: 'https://github.com/engbasel/mis-five5' },
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&q=80',
     year: '2024',
     category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://menu-hub-phi.vercel.app', github: 'https://github.com/engbasel/menuHUB' },
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
     year: '2023',
     category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://shemyra-family-store.vercel.app/', github: '#' },
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
     year: '2023',
     category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://almaseyah.vercel.app', github: '#' },
   },
   {
     id: 6,
@@ -74,7 +74,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80',
     year: '2022',
     category: 'Mobile App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://strongerkiddos.com/', github: '#' },
   },
 ];
 

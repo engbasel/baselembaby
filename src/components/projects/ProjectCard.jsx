@@ -117,6 +117,8 @@ const ProjectCard = ({ project, index }) => {
             >
               <motion.a
                 href={project.links.live}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-primary group/btn"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -127,6 +129,8 @@ const ProjectCard = ({ project, index }) => {
               </motion.a>
               <motion.a
                 href={project.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-ghost"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

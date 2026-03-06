@@ -5,91 +5,75 @@ import { ExternalLink, Github, ArrowUpRight, ArrowLeft } from 'lucide-react';
 const allProjects = [
   {
     id: 1,
-    title: 'Fintech Pro',
-    subtitle: 'Mobile Banking App',
-    description: 'A secure banking application serving 50k+ users with biometric authentication and real-time transaction sync.',
-    tags: ['Flutter', 'Bloc', 'Clean Architecture'],
+    title: 'Lighthouse Hospitality Management & Booking System',
+    subtitle: 'Full-Stack Hospitality Platform',
+    description:
+      'End-to-end web platform to manage property units, reservations, and guest bookings with an analytics dashboard for revenue, properties, bookings, and users, plus FCM-powered notifications and mobile integration.',
+    tags: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Flutter'],
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
     year: '2024',
-    category: 'Mobile App',
-    links: { live: '#', github: '#' },
+    category: 'Full-Stack Web App',
+    links: { live: 'https://light-house-web-dashboard.vercel.app', github: 'https://github.com/engbasel/Light-House-web-dashboard' },
   },
   {
     id: 2,
-    title: 'Analytics OS',
-    subtitle: 'Enterprise Dashboard',
-    description: 'Scalable admin dashboard for data visualization, reducing client reporting time by 40%.',
-    tags: ['React', 'TypeScript', 'Node.js'],
+    title: 'Misfivie — Luxury Fashion E-commerce',
+    subtitle: 'Luxury Fashion Store',
+    description:
+      'Bilingual (AR/EN) fashion e-commerce platform with full admin dashboard for products, orders, customers, automated post-purchase emails, Google OAuth2, and integrated Bosta shipping workflow.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Appwrite', 'Nodemailer', 'n8n'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
     year: '2024',
     category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://mis-five5.vercel.app', github: 'https://github.com/engbasel/mis-five5' },
   },
   {
     id: 3,
-    title: 'HealthTrack',
-    subtitle: 'Wellness Companion',
-    description: 'Health tracking app with AI-powered insights and wearable device integration.',
-    tags: ['Flutter', 'Firebase', 'ML Kit'],
+    title: 'MenuHub — Online Restaurant Menu & Ordering',
+    subtitle: 'Restaurant Menu Platform',
+    description:
+      'Digital menu and ordering platform where restaurants manage menus, receive customer orders via WhatsApp, and track them through an admin dashboard backed by a self-hosted backend.',
+    tags: ['React', 'Supabase', 'Node.js'],
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&q=80',
-    year: '2023',
-    category: 'Mobile App',
-    links: { live: '#', github: '#' },
+    year: '2024',
+    category: 'Web App',
+    links: { live: 'https://menu-hub-phi.vercel.app', github: 'https://github.com/engbasel/menuHUB' },
   },
   {
     id: 4,
-    title: 'E-Commerce Platform',
-    subtitle: 'Online Store',
-    description: 'Full-featured e-commerce solution with payment integration and inventory management.',
-    tags: ['React', 'Node.js', 'MongoDB'],
+    title: 'Shemyra Family Store — E-commerce Platform',
+    subtitle: 'Family Store Online Shop',
+    description:
+      'E-commerce web app with full shopping flow including product catalog, secure cart, user auth, responsive UI, real-time inventory, payments, and an admin dashboard.',
+    tags: ['JavaScript', 'React.js', 'Node.js', 'Appwrite', 'Vercel'],
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
     year: '2023',
     category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://shemyra-family-store.vercel.app/', github: '#' },
   },
   {
     id: 5,
-    title: 'TaskFlow',
-    subtitle: 'Project Management',
-    description: 'Collaborative project management tool with real-time updates and team analytics.',
-    tags: ['React', 'GraphQL', 'PostgreSQL'],
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80',
+    title: 'Almaseyah Web Application',
+    subtitle: 'Web Store & ERP',
+    description:
+      'Flutter web application for a home appliances store with an integrated ERP system to manage products, inventory, and store operations from a centralized admin dashboard.',
+    tags: ['Flutter Web', 'Firebase Auth', 'Cloud Firestore', 'Vercel'],
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
     year: '2023',
     category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://almaseyah.vercel.app', github: '#' },
   },
   {
     id: 6,
-    title: 'FoodieApp',
-    subtitle: 'Food Delivery',
-    description: 'Food delivery app with real-time order tracking and restaurant management dashboard.',
-    tags: ['Flutter', 'Firebase', 'Google Maps'],
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80',
-    year: '2023',
-    category: 'Mobile App',
-    links: { live: '#', github: '#' },
-  },
-  {
-    id: 7,
-    title: 'CryptoWatch',
-    subtitle: 'Portfolio Tracker',
-    description: 'Cryptocurrency portfolio tracker with real-time price alerts and market analysis.',
-    tags: ['React Native', 'Redux', 'WebSocket'],
-    image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&q=80',
+    title: 'Stronger Kiddos — Child Development App',
+    subtitle: 'Child Development Mobile App',
+    description:
+      'Cross-platform Flutter app that helps parents follow developmental programs, track child progress, and access educational content with offline-first caching and advanced navigation.',
+    tags: ['Flutter', 'Dart', 'BLoC', 'GoRouter', 'Drift (SQLite)', 'Firebase'],
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80',
     year: '2022',
     category: 'Mobile App',
-    links: { live: '#', github: '#' },
-  },
-  {
-    id: 8,
-    title: 'LearnHub',
-    subtitle: 'E-Learning Platform',
-    description: 'Online learning platform with video courses, quizzes, and progress tracking.',
-    tags: ['Next.js', 'Prisma', 'Stripe'],
-    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80',
-    year: '2022',
-    category: 'Web App',
-    links: { live: '#', github: '#' },
+    links: { live: 'https://strongerkiddos.com/', github: '#' },
   },
 ];
 
@@ -157,6 +141,8 @@ const ProjectCard = ({ project, index }) => {
           <div className="flex items-center gap-3">
             <motion.a
               href={project.links.live}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary text-sm group/btn"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -167,6 +153,8 @@ const ProjectCard = ({ project, index }) => {
             </motion.a>
             <motion.a
               href={project.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-ghost text-sm"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
