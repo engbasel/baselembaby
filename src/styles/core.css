@@ -22,10 +22,10 @@
   --color-text-secondary: #a1a1a1;
   --color-text-muted: #525252;
 
-  /* Accent - Violet */
-  --color-accent: #8b5cf6;
-  --color-accent-hover: #a78bfa;
-  --color-accent-muted: rgba(139, 92, 246, 0.1);
+  /* Accent - Premium Deep Blue */
+  --color-accent: #2563eb;
+  --color-accent-hover: #3b82f6;
+  --color-accent-muted: rgba(37, 99, 235, 0.1);
 
   /* Secondary - Emerald */
   --color-success: #10b981;
@@ -61,7 +61,7 @@
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 60px rgba(139, 92, 246, 0.15);
+  --shadow-glow: 0 0 60px rgba(37, 99, 235, 0.15);
 
   /* Transitions */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,9 +94,9 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   background-image:
-    radial-gradient(900px circle at 18% 8%, rgba(139, 92, 246, 0.10), transparent 55%),
-    radial-gradient(900px circle at 82% 18%, rgba(34, 211, 238, 0.08), transparent 55%),
-    radial-gradient(900px circle at 50% 92%, rgba(139, 92, 246, 0.06), transparent 55%);
+    radial-gradient(900px circle at 18% 8%, rgba(37, 99, 235, 0.10), transparent 55%),
+    radial-gradient(900px circle at 82% 18%, rgba(59, 130, 246, 0.08), transparent 55%),
+    radial-gradient(900px circle at 50% 92%, rgba(37, 99, 235, 0.06), transparent 55%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
