@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
-import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, ArrowUpRight } from 'lucide-react';
 
 const ProjectCard = ({ project, index }) => {
   const cardRef = useRef(null);
@@ -36,14 +36,14 @@ const ProjectCard = ({ project, index }) => {
           {/* Image Section */}
           <motion.div
             style={{ y }}
-            className={`relative h-72 lg:h-96 lg:col-span-7 ${index % 2 === 1 ? 'lg:order-2' : ''} overflow-hidden`}
+            className={`relative h-[450px] lg:h-[600px] lg:col-span-7 ${index % 2 === 1 ? 'lg:order-2' : ''} overflow-hidden`}
           >
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentImageIndex}
                 src={project.images[currentImageIndex]}
                 alt={project.title}
-                className="absolute inset-0 w-full h-full object-cover"
+                className={`absolute inset-0 w-full h-full ${project.category === 'Mobile App' ? 'object-contain bg-black/20 p-4' : 'object-cover'}`}
                 initial={{ opacity: 0, scale: 1.1 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
@@ -153,17 +153,6 @@ const ProjectCard = ({ project, index }) => {
                 <ExternalLink className="w-4 h-4" />
                 View Project
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-              </motion.a>
-              <motion.a
-                href={project.links.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-ghost"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Github className="w-4 h-4" />
-                Code
               </motion.a>
             </motion.div>
           </div>
